@@ -35,7 +35,7 @@ resource "aws_instance" "web" {
   instance_type          = "t2.micro"
   subnet_id              = "subnet-fdf3c88b"
   vpc_security_group_ids = ["sg-67393600"]
-  count                  = 2
+  count                  = 3
 
   tags {
     "Identity" = "datapipe-primate"
